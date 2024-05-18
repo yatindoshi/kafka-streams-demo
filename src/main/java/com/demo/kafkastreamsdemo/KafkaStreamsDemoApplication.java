@@ -4,9 +4,11 @@ import org.apache.kafka.streams.kstream.KStream;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import org.springframework.kafka.annotation.EnableKafkaStreams;
 
 @SpringBootApplication
+@EnableMongoRepositories
 public class KafkaStreamsDemoApplication {
 
 	@Bean
