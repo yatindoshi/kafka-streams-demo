@@ -17,4 +17,12 @@ public class CustomerService {
         return customerRepository.findAll();
     }
 
+    public Customer insert(Customer customer){
+        return customerRepository.insert(customer);
+    }
+
+    public List<Customer> findAllByPinCode(String pinCode){
+        return customerRepository.findAllByPinCode(pinCode);
+    }
+
 }
